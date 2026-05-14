@@ -1,0 +1,43 @@
+#t
+#f
+#\a
+#\newline
+#\space
+hello
+hello
+he++o
+hel.o
++
+...
+3.14
+3
+0.14
+-0.2
+()
+#()
+(1 . 2)
+(quote x)
+(quasiquote x)
+(unquote x)
+(unquote-splicing x)
+"hello world"
+"hello\nworld"
+"string with \\\"escape\"\\ sequences"
+"a"
+Error:
+#t
+Error:
+Error:
+Error:
+Error:
+Error:
+0.5
+(quote adsf)
+(define x 3)
+(1 2 . 3)
+#(i j k)
+(quasiquote (a b (unquote-splicing (c d (unquote f) (quote (g h))))))
+(3 4 "." ")" 5)
+Error:
+(1 2)
+Error:
