@@ -9,7 +9,7 @@ namespace scheme::lexer {
 
 class BooleanProcessor : public ITokenProcessor {
 public:
-  BooleanProcessor();
+  BooleanProcessor() = default;
 
   // Chỉ override hàm có trong ITokenProcessor
   std::optional<Token> try_process(std::string_view input, size_t line,

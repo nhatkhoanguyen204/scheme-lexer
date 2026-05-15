@@ -1,7 +1,7 @@
 #include "../include/LexerEngine.hpp"
 #include "../include/LexerError.hpp"
-#include "/home/nhatk/code/Principles of Programming Languages - 23TT1/lexer/include/ITokenProcessor.hpp"
-#include "/home/nhatk/code/Principles of Programming Languages - 23TT1/lexer/include/Token.hpp"
+#include "../include/ITokenProcessor.hpp"
+#include "../include/Token.hpp"
 #include <cctype>
 #include <cstddef>
 #include <memory>
@@ -49,7 +49,9 @@ std::vector<Token> LexerEngine::tokenize(std::string_view content) {
         // Cập nhật trạng thái Lexer
         content.remove_prefix(consumed_length);
         col += consumed_length;
-        tokens.push_back(token);
+        if (token.type != TokenType::Comment){
+          tokens.push_back(token);
+        }
 
         matched = true;
         break; // Tìm thấy token, chuyển sang ký tự tiếp theo của content

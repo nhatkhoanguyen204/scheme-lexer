@@ -10,8 +10,12 @@ enum class TokenType {
   String,
   OpenParen,
   CloseParen,
-  Dot,
+  VectorLiteral,
   Quote,
+  Quasiquote,
+  Unquote,
+  UnquoteSplicing,
+  Dot,
   Comment,
   Unknown
 };

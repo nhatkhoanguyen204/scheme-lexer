@@ -16,6 +16,8 @@ namespace scheme::lexer {
  */
 class CharacterProcessor : public ITokenProcessor {
 public:
+  CharacterProcessor() = default;
+  
   std::optional<Token> try_process(std::string_view input, size_t line,
                                    size_t col) override {
     if (input.empty())
