@@ -3,10 +3,15 @@
 #include "../include/LexerError.hpp"
 #include "../include/NumberProcessor.hpp"
 #include "../include/Token.hpp"
+#include <cstdio>
+#include <exception>
 #include <fstream>
 #include <iostream>
+#include <memory>
 #include <sstream>
+#include <stdexcept>
 #include <string>
+#include <vector>
 
 /**
  * @brief Hệ thống Log chuyên nghiệp

@@ -1,5 +1,6 @@
 #pragma once
 #include "Token.hpp"
+#include <cstddef>
 #include <optional>
 #include <string_view>
 namespace scheme::lexer {

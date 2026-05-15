@@ -1,7 +1,14 @@
 #include "../include/LexerEngine.hpp"
 #include "../include/LexerError.hpp"
+#include "/home/nhatk/code/Principles of Programming Languages - 23TT1/lexer/include/ITokenProcessor.hpp"
+#include "/home/nhatk/code/Principles of Programming Languages - 23TT1/lexer/include/Token.hpp"
 #include <cctype>
 #include <cstddef>
+#include <memory>
+#include <string>
+#include <string_view>
+#include <utility>
+#include <vector>
 
 namespace scheme::lexer {
 

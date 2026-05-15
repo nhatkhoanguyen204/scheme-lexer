@@ -1,4 +1,9 @@
 #include "../include/NumberProcessor.hpp"
+#include "../include/Token.hpp"
+#include "string_view"
+#include <cstddef>
+#include <optional>
+#include <regex>
 
 namespace scheme::lexer {
 

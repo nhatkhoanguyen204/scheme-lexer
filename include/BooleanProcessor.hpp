@@ -1,6 +1,10 @@
 #pragma once
 #include "ITokenProcessor.hpp"
+#include "Token.hpp"
+#include <cstddef>
+#include <optional>
 #include <regex>
+#include <string_view>
 namespace scheme::lexer {
 
 class BooleanProcessor : public ITokenProcessor {

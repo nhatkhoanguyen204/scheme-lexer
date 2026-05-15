@@ -1,5 +1,10 @@
 #include "../include/BooleanProcessor.hpp"
+#include "/home/nhatk/code/Principles of Programming Languages - 23TT1/lexer/include/Token.hpp"
+#include <cstddef>
+#include <optional>
 #include <regex>
+#include <string>
+#include <string_view>
 
 namespace scheme::lexer {
 
