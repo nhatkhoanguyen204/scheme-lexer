@@ -1,16 +1,17 @@
 #pragma once
-#include <string>
-#include <vector>
+#include "Token.hpp"
+#include <optional>
+#include <string_view>
+namespace scheme::lexer {
 
-/**
- * @brief Interface cho các bộ xử lý Token.
- * Tuân thủ nguyên tắc Interface Segregation.
- */
 class ITokenProcessor {
 public:
   virtual ~ITokenProcessor() = default;
-  virtual bool can_handle(const std::string &filename) const = 0;
-  virtual void process(const std::string &line) = 0;
-  virtual std::vector<std::string> get_results() const = 0;
-  virtual void clear() = 0;
+
+  // Trích xuất token từ vị trí hiện tại trong string_view
+  // Đảm bảo không copy string để tối ưu hiệu năng
+  virtual std::optional<Token> try_process(std::string_view input, size_t line,
+                                           size_t col) = 0;
 };
+
+} // namespace scheme::lexer
