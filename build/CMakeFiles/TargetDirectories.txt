@@ -1,7 +1,0 @@
-E:/Coding Things/scheme-lexer/build/CMakeFiles/lexer.dir
-E:/Coding Things/scheme-lexer/build/CMakeFiles/edit_cache.dir
-E:/Coding Things/scheme-lexer/build/CMakeFiles/rebuild_cache.dir
-E:/Coding Things/scheme-lexer/build/CMakeFiles/list_install_components.dir
-E:/Coding Things/scheme-lexer/build/CMakeFiles/install.dir
-E:/Coding Things/scheme-lexer/build/CMakeFiles/install/local.dir
-E:/Coding Things/scheme-lexer/build/CMakeFiles/install/strip.dir
