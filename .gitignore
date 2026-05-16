@@ -1,4 +1,4 @@
 \.vscode
 \src\.vscode
 someScheme/*.*
-build/*.*
+build/*
