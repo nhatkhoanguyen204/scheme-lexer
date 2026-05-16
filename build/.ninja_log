@@ -1,0 +1,10 @@
+# ninja log v6
+46	848	8006055489023993	CMakeFiles/lexer.dir/src/OperatorProcessor.cpp.obj	508118e432422678
+24	858	8006055488814015	CMakeFiles/lexer.dir/src/CharacterProcessor.cpp.obj	f69486d6fb9b7517
+31	1105	8006055488874035	CMakeFiles/lexer.dir/src/CommentProcessor.cpp.obj	24ddeafb6642307b
+12	4646	8006055488683976	CMakeFiles/lexer.dir/src/main.cpp.obj	b25218f9e165ffa9
+16	5127	8006055488733963	CMakeFiles/lexer.dir/src/LexerEngine.cpp.obj	afada23392cd5c00
+35	7652	8006055488923993	CMakeFiles/lexer.dir/src/IdentifierProcessor.cpp.obj	f488a13c9c601174
+41	7707	8006055488983997	CMakeFiles/lexer.dir/src/NumberProcessor.cpp.obj	d941df792d419995
+20	7780	8006055488773980	CMakeFiles/lexer.dir/src/BooleanProcessor.cpp.obj	957155def82aa11
+7780	8181	8006055566371201	lexer.exe	a8826535ecc6ffc4
