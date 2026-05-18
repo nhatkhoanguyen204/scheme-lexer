@@ -21,7 +21,13 @@ public:
     case '(':
         return Token{TokenType::OpenParen, std::string(input.substr(0, 1)),
                      line, col};
+    case '[':
+        return Token{TokenType::OpenParen, std::string(input.substr(0, 1)),
+                     line, col};
     case ')':
+        return Token{TokenType::CloseParen, std::string(input.substr(0, 1)),
+                     line, col};
+    case ']':
         return Token{TokenType::CloseParen, std::string(input.substr(0, 1)),
                      line, col};
     case '#':

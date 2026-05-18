@@ -6,7 +6,7 @@ namespace scheme::lexer {
 
 IdentifierProcessor::IdentifierProcessor() {
   m_id_regex = std::regex(
-      R"(^(([a-zA-Z!$%&*/:<=>?^_~][a-zA-Z0-9!$%&*\-+./:<=>?@^_~]*)|[+]|[-]|\.\.\.))",
+      R"(^(([a-zA-Z!$%&*/:<=>?^_~][a-zA-Z0-9!$%&*\-+./:<=>?@^_~]*)|(#[%][a-zA-Z0-9!$%&*\-+./:<=>?@^_~]+)|[+]|[-]|\.\.\.))",
       std::regex::icase);
 }
 
