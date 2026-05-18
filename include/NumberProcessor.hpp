@@ -21,7 +21,7 @@ public:
                                    size_t col) override;
 
 private:
-  std::regex m_num_regex;
+  std::regex m_dec_regex, m_bin_regex, m_oct_regex, m_hex_regex;
 };
 
 } // namespace scheme::lexer
