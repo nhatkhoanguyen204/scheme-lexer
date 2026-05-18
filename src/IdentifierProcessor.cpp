@@ -1,5 +1,6 @@
 #include "../include/IdentifierProcessor.hpp"
 #include <regex>
+#include <string>
 
 namespace scheme::lexer {
 
@@ -16,7 +17,11 @@ std::optional<Token> IdentifierProcessor::try_process(std::string_view input,
   auto str_end = str_begin + input.size();
 
   if (std::regex_search(str_begin, str_end, match, m_id_regex)) {
-    return Token{TokenType::Identifier, match.str(), line, col};
+    std::string match_str = match.str();
+    for (char& c : match_str) {
+      c = std::tolower(c);
+    }
+    return Token{TokenType::Identifier, match_str, line, col};
   }
   return std::nullopt;
 }

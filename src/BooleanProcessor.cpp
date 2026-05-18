@@ -18,6 +18,7 @@ std::optional<Token> BooleanProcessor::try_process(std::string_view input,
 
   if (std::regex_search(str_ptr, str_ptr + input.size(), match, bool_regex)) {
     std::string value(match[0].first, match[0].second);
+    value[1] = std::tolower(value[1]);
     return Token{TokenType::Boolean, value, line, col};
   }
 
